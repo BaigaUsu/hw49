@@ -1,22 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import { Link } from 'react-router-dom'; // 3й пункт переходы между страницами
+import { AutoClicker } from './AutoClicker'; // Дополнительное задание
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <AutoClicker></AutoClicker> {/* дополнительное задание */}
+        <Link to='new'>Go to new page</Link> {/*3й пункт переходы между страницами*/}
       </header>
     </div>
   );
